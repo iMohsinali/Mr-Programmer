@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <title>Mr programmer</title>
 
 </head>
@@ -14,7 +16,8 @@
     <section class="header">
         <nav>
             <a href="index.html"><img src="./eduford_img//logo.png" alt=""></a>
-            <div class="nav-links">
+            <div class="nav-links" id="nav-links">
+                <i class="fas fa-times" onclick="hidemenu()"></i>
                 <ul>
                     <li> <a href="">Home</a></li>
                     <li> <a href="">Anout</a></li>
@@ -23,6 +26,7 @@
                     <li><a href="">Contetct</a></li>
                 </ul>
             </div>
+            <i class="fas fa-bars" onclick="showmenu()"></i>
         </nav>
         <div class="text-box">
             <h1>Mr Programmer</h1>
@@ -30,8 +34,46 @@
                 hic accusamus <br> repellendus tenetur ab? Et alias dolor incidunt delectus possimus.</p>
             <a class='hero-btn' href="">Vist us to know more</a>
         </div>
-    </section>
 
+    </section>
+    <section class="course">
+        <h1>
+            Course we Offer
+        </h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, quos?</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, eos similique nostrum, ullam minima
+
+                    r repellat, voluptate minima odit?</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, eos similique nostrum, ullam minima
+
+                    repellat, voluptate minima odit?</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, eos similique nostrum, ullam minima
+
+                    repellat, voluptate minima odit?</p>
+            </div>
+
+        </div>
+    </section>
+    <script>
+        var navlinks = document.getElementById("nav-links");
+        function showmenu() {
+            navlinks.style.right = "0";
+        }
+        function hidemenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
 </body>
 
 </html>
